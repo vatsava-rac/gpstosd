@@ -95,7 +95,6 @@ void gpsdump(TinyGPS &gps)
   gps.get_datetime(&date, &time, &age);
   Serial.print("Date(ddmmyy): "); Serial.print(date); Serial.print(" Time(hhmmsscc): ");
     Serial.print(time);
- // Serial.print(" Fix age: "); Serial.print(age); Serial.println("ms.");
 
   gps.crack_datetime(&year, &month, &day, &hour, &minute, &second, &hundredths, &age);
   //Serial.print("Date: "); Serial.print(static_cast<int>(month)); Serial.print("/"); 
